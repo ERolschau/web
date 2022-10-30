@@ -6,15 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ERolschau's web</title>
     <style>
+    body {
+        background-color: azure;
+    }
     .portfolio{
         width: calc(100% - 10em);
         display:flex;
         flex-direction: row;
-        background-color: azure;
+        gap: 5px;
     }
     .portfolio article { 
         display:flex;
         flex-direction: column;
+        gap: 5px;
         height: fit-content;
         width: 100%;
         min-width: 100px;
@@ -86,11 +90,11 @@
             <article>
                 <div class="image">
                     <div class="title">web</div>
-                    <img src="https://media.sproutsocial.com/uploads/2017/02/10x-featured-social-media-image-size.png" alt="Eksempel">
+                    <img src="https://media.sproutsocial.com/uploads/2017/02/10x-featured-social-media-image-size.png" alt="Eksempel-billede">
                     <div class="hover">
                         <a href="https://www.google.com">
                             <div class="link">
-                                Link
+                                <img src="link.png" alt="Link">
                             </div>
                         </a>
                     </div>
