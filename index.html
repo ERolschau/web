@@ -12,12 +12,38 @@
             display:flex;
             flex-direction: row;
         }
-    .portfolio div { 
+    .portfolio article { 
         display:flex;
         flex-direction: column;
         height: fit-content;
         width: 100%;
-     }
+        min-width: 100px;
+        box-shadow: 0 0 10px grey;
+        background-color: azure;
+        border-radius: 5px;
+        padding: 10px;
+    }
+
+    .portfolio article .title {
+        border-radius: 0% 0% 10% 10%;
+        background-color: azure;
+        color: black;
+    }
+    
+    .portfolio article .image {
+        background-color: rgba(0,0,0,0.25);
+    }
+    .portfolio article .image:hover {
+        z-index: 1;
+    }
+    .portfolio article .image img {
+        height: 100%;
+        width: 100%;
+    }
+    .portfolio article .text {
+        font-size: 15px;
+        font-weight: 600;
+    }
     </style>
 </head>
 <body>
@@ -28,8 +54,16 @@
     </header>
     <main>
         <section class="portfolio">
-            <div>example 1</div>
-            <div>example 2</div>
+            <article>
+                <div class="title">web</div>
+                <div class="image"><img src="" alt=""></div>
+                <div class="text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illo voluptate porro</div>     
+            </article>
+            <article>
+                <div class="title"></div>
+                <div class="image"></div>
+                <div class="text"></div> 
+            </article>
         </section>
     </main>
     <footer></footer>
